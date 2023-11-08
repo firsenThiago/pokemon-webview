@@ -1,0 +1,10 @@
+.homeContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.homeContainer main {
+  flex: 1;
+  background: linear-gradient(180deg, #f5db13 0%, #f2b807 100%);
+}
