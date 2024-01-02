@@ -16,3 +16,12 @@
   gap: 40px;
   list-style: none;
 }
+
+.navContainer li {
+  color: #212121;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}

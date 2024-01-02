@@ -1,11 +1,26 @@
 import { Header } from "@/components/";
+import { BannerHome } from "@/assets";
+
 import "./style.css";
 
 export const Home = () => {
   return (
     <div className="homeContainer">
       <Header />
-      <main></main>
+      <main>
+        <div className="mainTextHomeContainer">
+          <h1>
+            <strong>Encontre</strong> todos os seus <strong>Pokémons </strong>
+            favoritos
+          </h1>
+          <p>
+            Você pode conhecer o tipo de Pokémon, seus pontos fortes,
+            desvantagens e habilidades.
+          </p>
+          <button type="button">Ver pokemons</button>
+        </div>
+        <img src={BannerHome} alt="Banner Home" />
+      </main>
     </div>
   );
 };
