@@ -25,3 +25,16 @@
   line-height: normal;
   cursor: pointer;
 }
+
+.active {
+  text-decoration: underline #212121;
+}
+
+.noActive {
+  text-decoration: none;
+}
+
+.active:hover,
+.noActive:hover {
+  text-decoration: underline #ffffff;
+}
