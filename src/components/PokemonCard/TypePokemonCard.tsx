@@ -5,6 +5,7 @@ type TypePokemonCardProps = {
 };
 
 const TypePokemonCard = ({ type }: TypePokemonCardProps) => {
+  console.log(type);
   const getBackgroundType = () => {
     switch (type) {
       case "fire":
@@ -13,6 +14,12 @@ const TypePokemonCard = ({ type }: TypePokemonCardProps) => {
         return "blue";
       case "grass":
         return "green";
+      case "poison":
+        return "purple";
+      case "flying":
+        return "lightblue";
+      case "bug":
+        return "red";
       default:
         return "gray";
     }

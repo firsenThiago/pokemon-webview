@@ -24,7 +24,7 @@ const PokemonCard = ({ pokemon }: PokemonCardProps) => {
         </div>
         <div className="containerTypePokemonCard">
           {pokemon.type.split(",").map((type, index) => (
-            <TypePokemonCard key={index} type={type} />
+            <TypePokemonCard key={index} type={type.trim()} />
           ))}
         </div>
       </div>
