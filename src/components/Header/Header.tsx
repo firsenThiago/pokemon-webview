@@ -5,7 +5,9 @@ import { NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <div className="headerContainer">
-      <img src={Logo} alt="Logo" />
+      <NavLink to={"/"}>
+        <img src={Logo} alt="Logo" />
+      </NavLink>
       <nav className="navContainer">
         <ul>
           <NavLink
@@ -19,12 +21,6 @@ export const Header = () => {
             className={({ isActive }) => (isActive ? "active" : "noActive")}
           >
             <li>Pokedex</li>
-          </NavLink>
-          <NavLink
-            to={"/lendarios"}
-            className={({ isActive }) => (isActive ? "active" : "noActive")}
-          >
-            <li>Lendarios</li>
           </NavLink>
         </ul>
       </nav>

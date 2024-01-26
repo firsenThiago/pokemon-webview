@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 1;
-  padding: 14px 0px;
+  padding: 14px 156px;
 }
 
 .navContainer ul {

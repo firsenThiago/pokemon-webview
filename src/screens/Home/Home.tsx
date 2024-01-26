@@ -8,7 +8,7 @@ export const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/pokemons");
+    navigate("/pokedex");
   };
 
   return (
