@@ -27,11 +27,13 @@ const TypePokemonCard = ({ type }: TypePokemonCardProps) => {
 
   const cardStyle: React.CSSProperties = {
     backgroundColor: getBackgroundType(),
-    padding: "5px",
+    fontSize: "36px",
+    padding: "4px",
     borderRadius: "8px",
     color: "white",
     textAlign: "center",
     textTransform: "capitalize",
+    marginTop: "32px",
   };
 
   return <div style={cardStyle}>{type}</div>;

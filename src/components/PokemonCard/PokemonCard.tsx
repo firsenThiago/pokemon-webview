@@ -22,15 +22,13 @@ const PokemonCard = ({ pokemon }: PokemonCardProps) => {
           <StatusPokemonCard status={pokemon.attack} text="Ataque" />
           <StatusPokemonCard status={pokemon.defense} text="Defesa" />
         </div>
-        <div className="containerTypePokemonCard">
+        <div>
           {pokemon.type.split(",").map((type, index) => (
             <TypePokemonCard key={index} type={type.trim()} />
           ))}
         </div>
       </div>
-      <div className="imageStylePokemonCard">
-        <img src={pokemon.photo} alt={pokemon.name} />
-      </div>
+      <img src={pokemon.photo} alt={pokemon.name} height={500} width={500} />
     </div>
   );
 };
